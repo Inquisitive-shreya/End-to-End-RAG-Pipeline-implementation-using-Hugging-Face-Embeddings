@@ -4,7 +4,7 @@ A comprehensive Retrieval-Augmented Generation (RAG) pipeline for document-based
 ## Overview
 This project implements a complete RAG pipeline that:
 
-**Ingests :** Documents: Loads PDF and text documents from a local directory.
+**Ingests :\n** Documents: Loads PDF and text documents from a local directory.
 **Splits Documents:** Chunks documents into manageable pieces using LangChain's RecursiveCharacterTextSplitter.
 **Generates Embeddings:** Uses HuggingFace's SentenceTransformer (all-MiniLM-L6-v2) to convert text chunks into dense vector embeddings.
 **Stores Vectors:** Persists embeddings locally using ChromaDB for efficient semantic search.
