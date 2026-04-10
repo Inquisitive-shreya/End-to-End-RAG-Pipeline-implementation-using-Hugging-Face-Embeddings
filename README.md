@@ -23,6 +23,7 @@ This project implements a complete RAG pipeline that:
 --**Document Loaders:** PyPDFLoader, TextLoader
 ## Project Structure
 RAG-Project/
+```bash
 │
 ├── RAG_pipeline.ipynb       # Main Jupyter Notebook containing the full pipeline code
 ├── README.md                # Project documentation
@@ -33,3 +34,4 @@ RAG-Project/
 │   └── .txt files           # Text documents
 │
 └── .env                     # Environment variables storing API keys (Groq, Gemini)
+'''
