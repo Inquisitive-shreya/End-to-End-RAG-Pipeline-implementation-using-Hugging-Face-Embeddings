@@ -4,12 +4,12 @@ A comprehensive Retrieval-Augmented Generation (RAG) pipeline for document-based
 ## Overview
 This project implements a complete RAG pipeline that:
 
-**Ingests Documents:** Loads PDF and text documents from a local directory.
-**Splits Documents:** Chunks documents into manageable pieces using LangChain's RecursiveCharacterTextSplitter.
-**Generates Embeddings:** Uses HuggingFace's SentenceTransformer (all-MiniLM-L6-v2) to convert text chunks into dense vector embeddings.
-**Stores Vectors:** Persists embeddings locally using ChromaDB for efficient semantic search.
-**Retrieves Context:** Fetches the most relevant document chunks based on user queries using cosine similarity.
-**Generates Answers:** Synthesizes the retrieved context to generate final answers using Language Models like Qwen (via Groq API) and Gemini 2.5 Flash (via Google GenAI API).
+Document Ingestion: Loads PDF and text files from a local directory.
+Text Splitting: Breaks documents into smaller chunks using LangChain’s RecursiveCharacterTextSplitter.
+Embedding Generation: Converts text chunks into dense vectors using HuggingFace SentenceTransformer (all-MiniLM-L6-v2).
+Vector Storage: Stores embeddings locally in ChromaDB for efficient semantic search.
+Context Retrieval: Retrieves the most relevant chunks based on user queries using cosine similarity.
+Answer Generation: Uses retrieved context to generate responses with LLMs such as Qwen (Groq API) and Gemini 2.5 Flash (Google GenAI API).
 ## What We Built (Core Implementation)
 --**Built an End-to-End RAG System:** We successfully transitioned raw documents into actionable knowledge by implementing proper document loaders and recursive text chunking.
 --**Integrated Multiple External LLMs:** To generate the final answers, we utilized both the Groq API and the Google Gemini API. By plugging directly into their powerful LLMs (specifically Qwen running on Groq, and Gemini 2.5 Flash), our pipeline synthesizes highly accurate answers natively based on the retrieved context!
